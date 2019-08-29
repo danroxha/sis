@@ -20,6 +20,7 @@ export default () => {
     return (
 
        <Form 
+            classNames = 'login-box'
             func={handleSubmitLogin} 
             method={'POST'}
 
