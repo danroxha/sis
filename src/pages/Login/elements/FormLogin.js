@@ -16,9 +16,7 @@ export default () => {
         event.preventDefault();
         alert(`LOGIN ACESS SUBMIT\nACESS: ${acess}\nPASSWORD: ${password}`);
     }
-    const options = {
-        method: 'POST'
-    }
+
     return (
 
        <Form 
