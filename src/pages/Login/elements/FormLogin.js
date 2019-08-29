@@ -4,22 +4,28 @@ import {Form, Input} from '../../../components/Form';
 
 import './style/Form.css';
 
-export default function(){
+export default () => {
+    
     const [acess, setAcess] = useState('');
     const [password, setPassword] = useState('');
     
     const handleAcess = event => setAcess(event.target.value);
     const handlePassword = event => setPassword(event.target.value);
 
-    
     const handleSubmitLogin = event => {
         event.preventDefault();
         alert(`LOGIN ACESS SUBMIT\nACESS: ${acess}\nPASSWORD: ${password}`);
     }
-
+    const options = {
+        method: 'POST'
+    }
     return (
 
-       <Form >
+       <Form 
+            func={handleSubmitLogin} 
+            method={'POST'}
+
+        >
            <Input
                 func = {handleAcess} 
                 label='acesso' 

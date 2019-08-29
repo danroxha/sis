@@ -15,9 +15,12 @@ const Input = ({name, type, placeholder, value, id, className, label, func}) =>
         />
     </label>
 );
-const Form = ({children}) =>
+const Form = ({func, method, children}) =>
 (
-    <form>
+    <form 
+        onSubmit = {func || ''}
+        method = {method || ''}
+    >
         {children}
     </form>
 );
