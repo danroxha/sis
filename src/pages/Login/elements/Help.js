@@ -1,0 +1,41 @@
+import React, {useState} from 'react';
+
+export default function Help(){
+    
+    const [emailSupport, setEmailSupport] = useState('');
+    const [phoneSupport, setPhoneSupport] = useState('');
+
+    const getPhoneAndEmailDataBase = async()=>{
+        // IMPLEMETART AJAX
+
+        setEmailSupport('example@example.com');
+        setPhoneSupport('(99) 99999-9999');
+    
+    }
+    
+    window.onload = getPhoneAndEmailDataBase;
+    
+    return (
+        <section id='help'>
+            <section id='support'>
+                <article>
+                    <h2>Suporte</h2>
+                    <address>
+                        <a href= {`mailto:${emailSupport}`}> {emailSupport}</a>             
+                        <a href={`tel:${phoneSupport}`}>{phoneSupport}</a>  
+                    </address>
+                </article>
+            </section>
+            <section id='about'>
+                <article>    
+                    <h2>Sobre</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Donec commodo iaculis est, eget consectetur orci elementum sit amet.
+                        Vestibulum molestie arcu enim, id vestibulum lorem fringilla nec.  
+                    </p>
+                </article>
+            </section>
+        </section>
+    );
+}

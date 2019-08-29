@@ -1,0 +1,14 @@
+.buttons{
+    color: #FFF;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-weight: bold;
+    background-color: #366fbc;
+    border-bottom: 5px solid rgba(0,0,0,0);
+    
+}
+.buttons:hover{
+    cursor: pointer;
+}

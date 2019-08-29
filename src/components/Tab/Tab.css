@@ -1,0 +1,11 @@
+
+.enable-tab{
+	display: initial;
+}
+
+.tab-view{
+    display: none;
+}
+.tab-view:target{
+    display: initial;
+}
