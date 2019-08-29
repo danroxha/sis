@@ -3,11 +3,11 @@ import './Form.css'
 
 const Input = ({name, type, placeholder, value, id, className, label, func}) => 
 (
-    <label for>
+    <label>
         {label}
         <input
             onChange = {func}
-            className = {className || ''} 
+            name = {name} 
             type = {type || ''}
             placeholder = {placeholder || ''}
             value = {value || ''}
@@ -15,9 +15,10 @@ const Input = ({name, type, placeholder, value, id, className, label, func}) =>
         />
     </label>
 );
-const Form = ({func, method, children}) =>
+const Form = ({classNames ,func, method, children}) =>
 (
-    <form 
+    <form
+        className = {`${classNames}`} 
         onSubmit = {func || ''}
         method = {method || ''}
     >
