@@ -18,21 +18,7 @@ export default function(){
     }
 
     return (
-        /*
-        <form className='login-box' onSubmit = {handleSubmitLogin}>
-            <input 
-                type='email'
-                onChange = {handleAcess}
-                value = {acess}
-            />
-            <input 
-                type='password'
-                onChange = {handlePassword}
-                value = {password}
-            />    
-            <Button type='submit' classNames='button-submit' >Acessar</Button>
-        </form>
-        */
+
        <Form >
            <Input
                 func = {handleAcess} 
