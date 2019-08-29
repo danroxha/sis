@@ -2,6 +2,15 @@ import React from 'react';
 
 import './Tab.css';
 
+const redirectTabsEnable = children => {
+
+	for(const elements of children)
+		if(!!elements['props'].enable)
+		{ 
+			window.location.hash = `#${elements['props']['name']}`;
+			break;
+		}
+}
 
 const Tabs = ({children : name, className: _className}) => 
 (
@@ -21,20 +30,25 @@ const Tabs = ({children : name, className: _className}) =>
     </nav>
 );
 
-const ViewTabs = ({children, enable}) =>{
-return (
-	children
-		.map((data, index) => (
-			<section
-				id={`${data.props.name}`}		
-				key = {(`${index}-${data.name}`)}  
-				className = 'tab-view'
-			>
-				{children[index]}
-			
-			</section>
-		))
-	);
+const ViewTabs = ({children}) =>{
+	if(!Array.isArray(children))
+		children = [children];
+	
+	redirectTabsEnable(children);
+	
+	return (
+		children
+			.map((data, index) => (
+				<section
+					id={`${data.props.name}`}		
+					key = {(`${index}-${data.name}`)}  
+					className = 'tab-view'
+				>
+					{children[index]}
+				
+				</section>
+			))
+		);
 }
 
 export {Tabs, ViewTabs};

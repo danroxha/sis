@@ -12,7 +12,7 @@ export default function(){
                 <Header />
                 <ViewTabs  >
                     <Form enable name='login'/>
-                    <Help name='help'/>
+                    <Help  name='help'/>
                 </ViewTabs>
             </main>
         </section>
