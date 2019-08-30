@@ -4,7 +4,6 @@ import './Form.css'
 const Input = ({name, type, placeholder, value, id, className, label, func}) => 
 (
     <label>
-        {label}
         <input
             onChange = {func}
             name = {name} 
@@ -13,6 +12,7 @@ const Input = ({name, type, placeholder, value, id, className, label, func}) =>
             value = {value || ''}
             
         />
+        <span>{label}</span>
     </label>
 );
 const Form = ({classNames ,func, method, children}) =>
