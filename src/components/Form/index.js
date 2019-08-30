@@ -1,20 +1,23 @@
 import React from 'react';
 import './Form.css'
 
-const Input = ({name, type, placeholder, value, id, className, label, func}) => 
+
+
+const Input = ({name, type, placeholder, value, id, className, label, func}) =>
 (
-    <label>
+    <label> 
         <input
             onChange = {func}
             name = {name} 
             type = {type || ''}
             placeholder = {placeholder || ''}
             value = {value || ''}
-            
+                
         />
         <span>{label}</span>
     </label>
 );
+
 const Form = ({classNames ,func, method, children}) =>
 (
     <form

@@ -34,7 +34,7 @@
 
 .login-box input:placeholder-shown + span {
     transition: .3s;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
 }
 
 .login-box input:focus + span{
