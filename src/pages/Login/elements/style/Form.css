@@ -17,9 +17,10 @@
     text-transform: uppercase;
 }
 .login-box span{
+    margin-bottom: 20px; 
     bottom: 0;
     position: absolute;
-    color: red;
+    color: #366fbc;
     left: 0;
 }
 .login-box input{
@@ -30,16 +31,15 @@
     height: 20px;
     margin-top: 30px;
 }
+
 .login-box input:placeholder-shown + span {
-    transition: .5s;
-    border-color: red;
+    transition: .3s;
+    margin-bottom: 0px; 
 }
 
-.login-box input:not(:placeholder-shown)  + span{
-    transition: .5s;
-    color: blue;
+.login-box input:focus + span{
+    transition: .3s;
     margin-bottom: 20px;
-    border-color: green;
 }
 
 .button-submit{
