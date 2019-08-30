@@ -40,9 +40,10 @@ const ViewTabs = ({children}) =>{
 		children
 			.map((data, index) => (
 				<section
+					className = 'tab-view'	
 					id={`${data.props.name}`}		
 					key = {(`${index}-${data.name}`)}  
-					className = 'tab-view'
+					
 				>
 					{children[index]}
 				

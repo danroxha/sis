@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import Button from '../../../components/Button';
+
+import './style/Help.css';
 
 export default function Help(){
     
@@ -16,13 +19,20 @@ export default function Help(){
     window.onload = getPhoneAndEmailDataBase;
     
     return (
-        <section id='help'>
+        <>
             <section id='support'>
                 <article>
                     <h2>Suporte</h2>
                     <address>
-                        <a href= {`mailto:${emailSupport}`}> {emailSupport}</a>             
-                        <a href={`tel:${phoneSupport}`}>{phoneSupport}</a>  
+                        <Button
+                            classNames = 'button-phone'
+                        >
+                            <a href= {`mailto:${emailSupport}`}> {emailSupport}</a>
+                        </Button>
+                        <span>
+                            <a href={`tel:${phoneSupport}`}>{phoneSupport}</a>
+                            <a href={`tel:${phoneSupport}`}>{phoneSupport}</a>
+                        </span>    
                     </address>
                 </article>
             </section>
@@ -36,6 +46,6 @@ export default function Help(){
                     </p>
                 </article>
             </section>
-        </section>
+        </>
     );
 }

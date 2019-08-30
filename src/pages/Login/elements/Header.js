@@ -2,7 +2,6 @@ import React from 'react';
 import {Tabs} from '../../../components/Tab';
 
 import './style/Header.css'
-import './style/Tabs.css'
 
 export default () =>
 (

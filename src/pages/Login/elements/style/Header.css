@@ -7,7 +7,6 @@
 }
 #header-login{
   width: 100%;
-  min-height: 100px;
   text-align: center;
   background-color: #366fbc;
   display: grid;
@@ -31,3 +30,22 @@
   border-color: #008fdb; 
 }
  
+
+nav{
+	display: grid;
+    grid-template-rows: auto;
+	grid-template-columns: repeat(2, auto);
+	text-align: center;
+	line-height: 85px;
+}
+
+.nav-tabs-login:hover{
+	border-bottom: 5px solid #008fdb;
+}
+
+.nav-tabs-login{
+	text-decoration: none;
+	color: #FFF;
+    height: 100%;
+	border-bottom: 5px solid rgba(0,0,0,0);
+}

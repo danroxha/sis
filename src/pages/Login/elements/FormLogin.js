@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Button from '../../../components/Button/';
 import {Form, Input} from '../../../components/Form';
 
-import './style/Form.css';
+import './style/FormLogin.css';
 
 export default () => {
     
