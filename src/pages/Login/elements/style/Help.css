@@ -3,10 +3,11 @@
     grid-template-columns: repeat(2, 50%);
 }
 #help h2{
+    text-transform: uppercase;
+    font-size:16pt;
     text-align: center;
     color: #366fbc;
     border-bottom: 1px solid #366fbc;
-    padding-bottom: 5px;
 }
 
 #help span a{
