@@ -11,8 +11,8 @@ export default () =>
         <main className='container-box'>
             <Header />
             <ViewTabs  >
-                <FormLogin  name='login'/>
-                <Help  enable name='help'/>
+                <FormLogin enable name='login'/>
+                <Help   name='help'/>
             </ViewTabs>
         </main>
     </section>
