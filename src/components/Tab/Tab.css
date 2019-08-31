@@ -9,3 +9,9 @@
 .tab-view:target{
     display: grid;
 }
+
+@media only screen and (max-width: 600px){
+    .mobile-style{
+        background-color: #366fbc;
+    }
+}

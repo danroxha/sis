@@ -16,3 +16,14 @@
     position: relative;
 
 }
+
+@media only screen and (max-width: 600px){
+    #page-login-index{
+        align-content: initial;
+        justify-content: initial;
+        background-color: #366fbc;
+    }
+    .container-box{
+        grid-template-rows: 40px auto;
+    }
+}

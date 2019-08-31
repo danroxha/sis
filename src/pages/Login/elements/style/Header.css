@@ -49,3 +49,18 @@ nav{
     height: 100%;
 	border-bottom: 5px solid rgba(0,0,0,0);
 }
+
+@media only screen and (max-width: 600px){
+  .logo{
+    display: none;
+  }
+    #header-login{
+        width: 100%;
+        background-color: #FFF;
+        grid-template-columns: auto;
+        color: #366fbc;
+    }
+    #header-login nav{
+      display: none;
+    }
+}
