@@ -16,9 +16,9 @@
 }
 #help article{
     height: 100%;
+    padding: 0 10px;
     display: grid;
     grid-template-rows: 100px auto;
-    justify-content: center;
 }
 
 .button-phone{
@@ -39,4 +39,15 @@
     grid-template-rows: 0px auto;
     grid-gap: 100px;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+    #help{
+        grid-template-columns: auto;
+        grid-gap: 20px;
+        padding: 10px;
+    }
+    #help article{
+        background-color: #FFF;
+    }
 }
