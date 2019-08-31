@@ -5,15 +5,16 @@ import Help from './elements/Help'
 import './index.css';
 import {ViewTabs} from '../../components/Tab';
 
-export default () =>
-(
-    <section id='page-login-index'>
-        <main className='container-box'>
-            <Header />
-            <ViewTabs  >
-                <FormLogin enable name='login'/>
-                <Help   name='help'/>
-            </ViewTabs>
-        </main>
-    </section>
-);
+export default function Login(){
+    return(
+        <section id='page-login-index'>
+            <main className='container-box'>
+                <Header />
+                <ViewTabs  className = 'mobile-style'>
+                    <FormLogin enable name='login'/>
+                    <Help   name='help'/>
+                </ViewTabs>
+            </main>
+        </section>
+    );
+}

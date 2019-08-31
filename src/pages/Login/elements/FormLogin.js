@@ -4,7 +4,7 @@ import {Form, Input} from '../../../components/Form';
 
 import './style/FormLogin.css';
 
-export default () => {
+export default function FormLogin(){
     
     const [acess, setAcess] = useState('');
     const [password, setPassword] = useState('');

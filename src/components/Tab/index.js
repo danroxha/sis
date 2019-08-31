@@ -30,7 +30,7 @@ const Tabs = ({children : name, className: _className}) =>
     </nav>
 );
 
-const ViewTabs = ({children}) =>{
+const ViewTabs = ({children, className}) =>{
 	if(!Array.isArray(children))
 		children = [children];
 	
@@ -40,7 +40,7 @@ const ViewTabs = ({children}) =>{
 		children
 			.map((data, index) => (
 				<section
-					className = 'tab-view'	
+					className = {`tab-view ${ className || '' }`}	
 					id={`${data.props.name}`}		
 					key = {(`${index}-${data.name}`)}  
 					
