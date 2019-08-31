@@ -4,6 +4,7 @@ import './Tab.css';
 
 const redirectTabsEnable = children => {
 
+	// eslint-disable-next-line no-unused-vars
 	for(const elements of children)
 		if(!!elements['props'].enable)
 		{ 
