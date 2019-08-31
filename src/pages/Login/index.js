@@ -2,8 +2,9 @@ import React from 'react';
 import Header from './elements/Header';
 import FormLogin from './elements/FormLogin'
 import Help from './elements/Help'
-import './index.css';
 import {ViewTabs} from '../../components/Tab';
+
+import './index.css';
 
 export default function Login(){
     return(
@@ -12,7 +13,7 @@ export default function Login(){
                 <Header />
                 <ViewTabs  className = 'mobile-style'>
                     <FormLogin enable name='login'/>
-                    <Help   name='help'/>
+                    <Help name='help'/>
                 </ViewTabs>
             </main>
         </section>
