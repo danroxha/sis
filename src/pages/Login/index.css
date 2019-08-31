@@ -24,6 +24,6 @@
         background-color: #366fbc;
     }
     .container-box{
-        grid-template-rows: 40px auto;
+        grid-template-rows: 50px auto;
     }
 }
