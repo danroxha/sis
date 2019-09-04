@@ -1,8 +1,11 @@
 .logo{
+  margin: auto;
   border: none;
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  max-width: 80px;
+  max-height: 80px;
   background-color: #FFF;
 }
 #header-login{
@@ -17,37 +20,33 @@
   color: #FFF;
   align-items: center;
 }
-#header-login div{
-  display: grid;
-  grid-template-columns: auto auto;
-  height: 100%;
-  width: 100%;
-}
-.tabs-header-login{
-  border-bottom: 5px solid rgba(0,0,0,0);
-}
+
+
 .tabs-header-login:hover{
   border-color: #008fdb; 
 }
  
 
 nav{
+  padding: 0;
 	display: grid;
-    grid-template-rows: auto;
+  grid-template-rows: auto;
 	grid-template-columns: repeat(2, auto);
 	text-align: center;
-	line-height: 85px;
-}
-
-.nav-tabs-login:hover{
-	border-bottom: 5px solid #008fdb;
+  line-height: 85px;
+  font-size: 12pt;
 }
 
 .nav-tabs-login{
+  border-bottom: 5px solid rgba(0,0,0,0);
 	text-decoration: none;
 	color: #FFF;
-    height: 100%;
-	border-bottom: 5px solid rgba(0,0,0,0);
+  height: 100%;
+  padding: 0;
+}
+
+.nav-tabs-login:hover{
+  border-bottom: 5px solid #3297ce;
 }
 
 @media only screen and (max-width: 600px){
