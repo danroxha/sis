@@ -34,8 +34,6 @@
 
 .button-submit{
    margin-top: 20px;
-   height: 50px;
-   text-transform: uppercase;
 }
 
 @media only screen and (max-width: 600px){

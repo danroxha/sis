@@ -7,6 +7,8 @@
     font-weight: bold;
     background-color: #366fbc;
     border-bottom: 5px solid rgba(0,0,0,0);
+    height: 50px;
+    text-transform: uppercase;
     
 }
 .buttons:hover{
