@@ -1,1 +1,8 @@
-{}
+.fill-style-input{
+    transition: .3s;
+    transform: translateY(-20px);
+}
+.empty-style-input{
+    transition: .3s;
+    transform: translateY(0px);
+}

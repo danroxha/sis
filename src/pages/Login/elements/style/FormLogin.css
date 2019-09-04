@@ -22,6 +22,7 @@
     color: #366fbc;
     left: 0;
 }
+
 .login-box input{
     font-size: 12pt;
     width: 100%;
@@ -29,16 +30,6 @@
     border-bottom: 2px solid #366fbc;
     height: 20px;
     margin-top: 30px;
-}
-
-.login-box input:placeholder-shown + span {
-    transition: .3s;
-    transform: translateY(0);
-}
-
-.login-box input:focus + span{
-    transition: .3s;
-    transform: translateY(-20px);
 }
 
 .button-submit{
