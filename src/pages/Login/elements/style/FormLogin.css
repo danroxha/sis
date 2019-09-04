@@ -16,8 +16,7 @@
     width: 100%;
     text-transform: uppercase;
 }
-.login-box span{
-    margin-bottom: 20px; 
+.login-box span{ 
     bottom: 0;
     position: absolute;
     color: #366fbc;
@@ -34,12 +33,12 @@
 
 .login-box input:placeholder-shown + span {
     transition: .3s;
-    margin-bottom: 0px;
+    transform: translateY(0);
 }
 
 .login-box input:focus + span{
     transition: .3s;
-    margin-bottom: 20px;
+    transform: translateY(-20px);
 }
 
 .button-submit{
