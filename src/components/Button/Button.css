@@ -11,6 +11,9 @@
     text-transform: uppercase;
     
 }
+.link-button{
+    width: 100%;
+}
 .buttons:hover{
     cursor: pointer;
 }

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Button from '../../../components/Button';
+import {ButtonLink} from '../../../components/Button';
 
 import './style/Help.css';
 
@@ -24,11 +24,12 @@ export default function Help(){
                 <article>
                     <h2>Suporte</h2>
                     <address>
-                        <Button
+                        <ButtonLink
                             classNames = 'button-phone'
+                            href= {`mailto:${emailSupport}`}
                         >
-                            <a href= {`mailto:${emailSupport}`}> {emailSupport}</a>
-                        </Button>
+                          {emailSupport}
+                        </ButtonLink>
                         <span>
                             <a href={`tel:${phoneSupport}`}>{phoneSupport}</a>
                             <a href={`tel:${phoneSupport}`}>{phoneSupport}</a>
