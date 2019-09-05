@@ -1,0 +1,25 @@
+.-common{
+    background-color: #e5e5e5;
+    color: #FFF;
+    font-size: 16pt;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    padding: 5px;
+}
+.search-input{
+    border: none;
+    height: 25px;
+    max-width: 500px;
+    border-right: 2px solid #FFF;
+}
+
+.search-input::placeholder{
+    color: #FFF;
+    font-weight: bold;
+}
+
+.search-select{
+    border: none;
+    max-width: 150px;
+}
