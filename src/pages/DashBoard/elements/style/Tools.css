@@ -1,5 +1,5 @@
 #tools-section{
-   
+    margin: 0 10px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 1em;
@@ -13,22 +13,32 @@
 }
 
 #tools-section section:nth-child(1) button{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-content: center;
+    text-align: center;
+    /*line-height: 100px;*/
     background-color: #FFF;
     color: #366fbc;
-    min-height: 100px;
+    min-height: 127px;
+    margin-bottom: 10px;
 
 }
-
 
 #tools-section section:nth-child(1) img{
     padding: 10px;
     border: 2px solid #000;
     border-radius: 50%;
+    margin: auto 0;
 }
 
-#tools-section section:nth-child(2){
+#tools-section section:nth-child(1) span{
+    text-align: center;
+    line-height: 100px;
+    
+}
+
+#tools-section section:nth-child(2), #tools-section section:nth-child(3){
     background-color: #FFF;
 }
-#tools-section section button{
-    margin-bottom: 10px;
-}
+
