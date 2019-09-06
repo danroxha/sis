@@ -4,7 +4,7 @@ import './Button.css';
 const Button = ({children, type, classNames}) =>(
     <button 
         className={`buttons ${classNames}`}
-        type={type || 'text'}
+        type={type || ''}
     >
         {children || 'butão'}
     </button>   
