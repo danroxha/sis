@@ -26,7 +26,9 @@ const Input = ({name, type, placeholder, value, id, classNamesInput, label, func
                 value = {value || ''}
                     
             />
+
             <span className = {styleFillInput}>{label}</span>
+        
         </label>
     );
 }
@@ -37,24 +39,26 @@ const Form = ({classNames ,func, method, children}) =>
         onSubmit = {func || (()=>{})}
         method = {method || 'POST'}
     >
+
         {children || ''}
+    
     </form>
 );
 
-const Select = ({data, classNames}) => (
+const Select = ({data, classNames, selected}) => (
+    
     <select 
-            className={ classNames ||'-select-input-default-style-component-global'}
-        >
-            {data 
-                ? data.map((value, index) =>
-                    (   <option
-                            key = {`${value.name + index}`} 
-                            value={`${value.name}`}
-                        >
-                            {`${value.name}`}
-                        </option>
-                    )
-                )
+        className={ classNames ||'-select-input-default-style-component-global'}
+    >
+        {data 
+            ? data.map((value, index) =>(
+                <option
+                    key = {`${value.name + index}`} 
+                    value={`${value.name}`}
+                >
+                    {`${value.name}`}
+                </option>
+            ))
                 : ''
         }
         </select>

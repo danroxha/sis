@@ -10,10 +10,7 @@ export default function SectionSecondary(){
         {name: 'MEDICO'},
         {name: 'CAMPANHA'},
     ]
-    /*
-    
-                */
-
+   
     return(
         <section 
             className = {'section-secondary-tools'}
@@ -21,6 +18,7 @@ export default function SectionSecondary(){
             <Form
                 classNames = {''}
             >
+                <h2 className = {'title-section-secondary'}>Agendar consulta</h2>
                 <Input
                     label='CPF' 
                     name='cpf' 
