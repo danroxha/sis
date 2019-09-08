@@ -16,8 +16,8 @@ export default function HeaderDash(){
             id = {'header_dashboard'}
         >
             <Search
-                placeholder = {'Pesquisar'}
                 data = {list}
+                placeholder = {'Pesquisar'}
             />
         </header>
     );

@@ -1,14 +1,47 @@
 import React from 'react';
 import {Button} from '../../../../../components/Button';
-import {Form, Input} from '../../../../../components/Form';
+import {Form, Input, Select} from '../../../../../components/Form';
+
+import './SectionSecondary.css';
 
 export default function SectionSecondary(){
+    const list = [
+        {name: 'PACIENTE'},
+        {name: 'MEDICO'},
+        {name: 'CAMPANHA'},
+    ]
+    /*
+    
+                */
+
     return(
-        <section>
-            <Form>
-                <Input label='cpf'/>
-                <Input label='nome'/>
-                <Button>Pesquisar</Button>
+        <section 
+            className = {'section-secondary-tools'}
+        >
+            <Form
+                classNames = {''}
+            >
+                <Input
+                    label='CPF' 
+                    name='cpf' 
+                    type='text' 
+                />
+                
+                <Input 
+                    label='name' 
+                    name='name' 
+                    type='text' 
+                />
+
+                <Select data = {list}/>
+                
+                <Button 
+                    type='submit'
+                    classNames='button-submit'
+                >
+                    Pesquisar
+                </Button>
+                
             </Form>
         </section>
     );

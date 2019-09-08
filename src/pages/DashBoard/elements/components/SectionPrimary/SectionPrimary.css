@@ -1,0 +1,16 @@
+.section-primary-tools button{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-content: center;
+    text-align: center;
+    line-height: 100px;
+    background-color: #FFF;
+    color: #366fbc;
+    min-height: 127px;
+    margin-bottom: 10px;
+}
+
+.section-primary-tools span{
+    text-align: center;
+    line-height: 100px;
+}
