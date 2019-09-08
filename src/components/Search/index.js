@@ -9,8 +9,8 @@ const Search = ({placeholder, data}) =>
             classNamesInput = {'search-input -common'}
             type={'text'}
             placeholder={placeholder}
-           
         />
+        
         <Select 
             data = {data}
             classNames = {'search-select -common'}
