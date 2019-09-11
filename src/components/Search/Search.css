@@ -1,25 +1,30 @@
-.-common{
+.-commom{
     background-color: #e5e5e5;
-    color: #FFF;
+    color: #00F;
     font-size: 16pt;
     text-transform: uppercase;
     font-weight: bold;
     width: 100%;
     padding: 5px 0;
-}
-.search-input{
     border: none;
-    height: 25px;
-    max-width: 500px;
+    text-transform: uppercase;
+}
+
+.form-search-data{
+    display: grid;
+    grid-template-columns: 50% 120px;
+    text-transform: uppercase;
+}
+
+.form-search-data input{
     border-right: 2px solid #FFF;
 }
 
-.search-input::placeholder{
-    color: #FFF;
+.form-search-data input::placeholder{
     font-weight: bold;
 }
 
-.search-select{
-    border: none;
-    max-width: 160px;
+.form-search-data select{  
+    background-color: re;
+    min-width: 150px;
 }

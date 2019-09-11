@@ -4,16 +4,18 @@ import './Search.css';
 
 const Search = ({placeholder, data}) => 
 (
-    <Form>
+    <Form
+        classNames = {'form-search-data'}
+    >
         <Input 
-            classNamesInput = {'search-input -common'}
+            classNamesInput = {'-commom'}
             type={'text'}
             placeholder={placeholder}
         />
         
         <Select 
+            classNames = {'-commom'}
             data = {data}
-            classNames = {'search-select -common'}
         />
     </Form>
 );
