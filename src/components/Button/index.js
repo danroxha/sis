@@ -23,6 +23,7 @@ const ButtonLink = ({children, type, classNames, href}) => (
             {children || 'butão'}
         </button>
     </a>
-)
+);
 
+export default Button;
 export {Button, ButtonLink};
