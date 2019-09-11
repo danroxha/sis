@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from '../../../../../components/Button';
 
+import './SectionPrimary.css';
+
 export default function SectionPrimary(){
     return(
         <section
