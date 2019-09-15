@@ -1,8 +1,27 @@
 import React from 'react';
 
-export default function List({data, title}){
-    console.log(data)
-    return(
+
+const List = ({data}) => (
+    <li>
+        {data.map((content, index) => {
+            return(
+                <ul>
+                    <li>{`${content.nome}`}</li>
+                    <li>{`CONSULTÓRIO: ${content.consultorio}`}</li>
+                    <li>{`ESPECIALIZAÇÃO: ${content.especializacao}`}</li>
+                    <li>{`PRIORIDADE: ${content.prioridade}`}</li>
+                </ul>
+                
+            );
+        })}
+    </li>
+);
+
+
+
+export {List};
+
+/*
         <ul>
             <h2>{title}</h2>
             {
@@ -12,11 +31,10 @@ export default function List({data, title}){
                         key = {`${content.text} + ${index}`}
                     >
                         {content.text}
-                    </li>    
+                    </ul>    
                     )            
                 )
                 : ''
             }
         </ul>
-    );   
-}
+        */
