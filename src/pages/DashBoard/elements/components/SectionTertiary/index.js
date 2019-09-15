@@ -2,23 +2,37 @@ import React from 'react';
 
 //import {List} from '../../../../../components/List';
 
-const List = ({data, title}) =>(
-    <main>
-        <h2>{title || ''}</h2>
-        <ul>
-            {
-                data.map(content => 
-                    <li>
-                        <ul>
-                            {Object.keys(content).map(
-                                values => <li>{content[String(values)]}</li>
-                                    
-                            )}
-                        </ul>
-                    </li>
-                )
-            }
-        </ul>
+import './SectionTertiary.css';
+
+const List = ({data, title, id}) =>(
+    <main id = {id}>
+        <header>
+            <span>{title || ''}</span>
+        </header>
+        <section>  
+            <ul>
+                {
+                    data.map((content, index_main) => 
+                        <li
+                            key = {`${index_main}_lists_${title}`}
+                            className = {`list-content ${(index_main == 0) ? 'fist-children' : ''}`}
+                        >
+                            <ul>
+                                {Object.keys(content).map(
+                                    (values,index_children) => 
+                                        <li
+                                            key = {`${index_children}_content_${title}`}
+                                        >
+                                            {content[String(values)]}
+                                        </li>
+                                        
+                                )}
+                            </ul>
+                        </li>
+                    )
+                }
+            </ul>
+        </section>
     </main>
 );
 
@@ -50,11 +64,72 @@ export default function SectionTertiary(){
             especializacao: 'DENTISTA',
             prioridade : 'REGULAR', 
         },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
+        {
+            nome : 'AGNALDO  SANTYS',
+            consultorio : 'A-22',
+            especializacao: 'DENTISTA',
+            prioridade : 'REGULAR', 
+        },
     ]
 
     return(
         <section>
             <List
+                id = {'list-section-tertiary'}
                 title = {'CHAMADAS'}
                 data = {dadosPaciente}
             />
