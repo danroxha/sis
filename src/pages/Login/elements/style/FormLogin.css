@@ -17,6 +17,6 @@
     .login-box{
         grid-template-columns: 90%;
         margin: 20% 10px;
-        background-color: #FFF;
+        background-color: var(--secundary-color);
     }
 }   

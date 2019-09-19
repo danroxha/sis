@@ -12,7 +12,7 @@ export default [
         prioridade : 'REGULAR', 
     },
     {
-        nome : 'SANTYS ASTROGILDO ',
+        nome : 'SANTYS ASTROGILDO',
         consultorio : 'A-20',
         especializacao: 'DENTISTA',
         prioridade : 'REGULAR', 

@@ -14,17 +14,23 @@ const ListCall = ({data}) =>(
                     key = {`${index_main}_lists_`}
                 >
                     <ul
-                        className = {`list-content ${(index_main === 0) ? 'fist-children' : ''}`}
+                       className = {`list-content ${(index_main === 0) ? '_first-children' : '_next-children'}`}
                     >
                         {Object.keys(content).map(
                             (values,index_children) => 
                                 <li
                                     key = {`${index_children}_content_`}
                                 >
-                                    {console.log(values)}
-                                    {`${String(values).toLocaleUpperCase()}: ${content[String(values)]}`}
+                                    {
+                                        console.log(index_main)
+                                    }
+                                    {   
+                                        (index_main === 0)
+                                        ? `${(String(values) !== 'nome')? `${String(values).toLocaleUpperCase()} :` : '' } ${content[String(values)]}`
+                                        : (String(values) === 'nome')? `${content[String(values)]} | ${content['especializacao']}`: ''
+                                    }
                                 </li>
-                                        
+                            
                         )}
                     </ul>
                 </li>

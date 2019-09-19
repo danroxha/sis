@@ -4,7 +4,7 @@ import DashBoard from './pages/DashBoard/';
 
 export default function App(){
     return(
-        <Login />
-        //<DashBoard />
+        //<Login />
+        <DashBoard />
     );
 }

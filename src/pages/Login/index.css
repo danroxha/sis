@@ -21,7 +21,6 @@
     #page-login-index{
         align-content: initial;
         justify-content: initial;
-        background-color: #366fbc;
     }
     .container-box{
         grid-template-rows: 50px auto;
