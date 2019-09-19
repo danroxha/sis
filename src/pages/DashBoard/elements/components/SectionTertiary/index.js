@@ -6,13 +6,12 @@ import data_fa from './data_fa';
 
 import './SectionTertiary.css';
 
-const List = ({data}) =>(
+const ListCall = ({data}) =>(
     <ul>
         {
             data.map((content, index_main) => 
                 <li
                     key = {`${index_main}_lists_`}
-                    
                 >
                     <ul
                         className = {`list-content ${(index_main === 0) ? 'fist-children' : ''}`}
@@ -22,7 +21,8 @@ const List = ({data}) =>(
                                 <li
                                     key = {`${index_children}_content_`}
                                 >
-                                    {content[String(values)]}
+                                    {console.log(values)}
+                                    {`${String(values).toLocaleUpperCase()}: ${content[String(values)]}`}
                                 </li>
                                         
                         )}
@@ -38,11 +38,11 @@ export default function SectionTertiary(){
     return(
         <section id = "section-tertiary">
             <header>
-                    <span>CHAMDAS</span>
+                    <span>CHAMADAS</span>
             </header> 
             <section className="list-section-tertiary">
                     
-                <List
+                <ListCall
                     data = {data_fa}
                 />
             </section>

@@ -18,7 +18,7 @@ export default function SectionSecondary(){
             <Form
                 classNames = {''}
             >
-                <h2 className = {'title-section-secondary'}>Agendar consulta</h2>
+                <span className = {'title-section-secondary'}>Agendar consulta</span>
                 <Input
                     label='CPF' 
                     name='cpf' 

@@ -1,5 +1,10 @@
 *{
   outline: none;
+  --primary-color : #366fbc;
+  --secundary-color: #ffffff;
+  --tertiary-color: #cccccc;
+  --fifth-color: #99d9ea;
+  --transparent: rgba(0,0,0,0);
 }
 body, html {
   margin: 0;

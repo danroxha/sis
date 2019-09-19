@@ -1,4 +1,4 @@
 .nav-bar-menu{
-    background-color: #366fbc;
+    background-color: var(--primary-color);
     width: 100%;
 }

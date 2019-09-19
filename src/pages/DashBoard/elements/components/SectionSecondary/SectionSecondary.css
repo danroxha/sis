@@ -1,5 +1,6 @@
 .section-secondary-tools{
-    background-color: #FFF;
+    background-color: var(--secundary-color);
+    text-align: center;
 }
 .section-secondary-tools form{
     margin: 0 10px;
@@ -16,7 +17,9 @@
 
 
 .title-section-secondary{
+    font-size: 18pt;
     text-align: center;
     text-transform: uppercase;
-    color: #366fbc;
+    color: var(--primary-color);
+    font-weight: bold;
 }

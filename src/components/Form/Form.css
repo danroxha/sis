@@ -6,7 +6,7 @@
 }
 .empty-style-input{
     transition: .3s;
-    transform: translateY(0px);
+    transform: translateY(-2px);
 }
 
 /*ANIMAÇÃO INPUTs*/
@@ -23,7 +23,7 @@
 .-label-input-component span{
     bottom: 0;
     position: absolute;
-    color: #366fbc;
+    color: var(--primary-color);
     left: 0;
 }
 
