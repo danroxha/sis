@@ -4,8 +4,8 @@
     align-content: center;
     text-align: center;
     line-height: 100px;
-    background-color: #FFF;
-    color: #366fbc;
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
     min-height: 127px;
     margin-bottom: 10px;
 }
