@@ -6,24 +6,24 @@
   height: 100%;
   max-width: 80px;
   max-height: 80px;
-  background-color: #FFF;
+  background-color: var(--secundary-color);
 }
 #header-login{
   width: 100%;
   text-align: center;
-  background-color: #366fbc;
+  background-color: var(--primary-color);
   display: grid;
   grid-template-columns: repeat(3, auto);
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 8pt;
-  color: #FFF;
+  font-size: var(--font-size-two);
+  color: var(--secundary-color);
   align-items: center;
 }
 
 
 .tabs-header-login:hover{
-  border-color: #008fdb; 
+  border-color: var(--fourth-color); 
 }
  
 
@@ -34,13 +34,13 @@ nav{
 	grid-template-columns: repeat(2, auto);
 	text-align: center;
   line-height: 85px;
-  font-size: 12pt;
+  font-size: var(--font-size-three);
 }
 
 .nav-tabs-login{
-  border-bottom: 5px solid rgba(0,0,0,0);
+  border-bottom: 5px solid var(--transparent);
 	text-decoration: none;
-	color: #FFF;
+	color: var(--secundary-color);
   height: 100%;
   padding: 0;
 }
@@ -55,9 +55,9 @@ nav{
   }
     #header-login{
         width: 100%;
-        background-color: #FFF;
+        background-color: var(--secundary-color);
         grid-template-columns: auto;
-        color: #366fbc;
+        color: var(--primary-color);
     }
     #header-login nav{
       display: none;
