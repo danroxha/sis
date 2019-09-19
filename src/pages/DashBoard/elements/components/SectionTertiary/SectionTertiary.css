@@ -54,10 +54,9 @@
 
 ._first-children{
     background-color: var(--seventh-color);
-    height: 120px;
+    min-height: 120px;
 }
 ._first-children li{
-   display: block;
    padding: 5px 0;
    
 }

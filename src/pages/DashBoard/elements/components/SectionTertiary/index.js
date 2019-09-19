@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 //import {List} from '../../../../../components/List';
 
@@ -21,9 +21,7 @@ const ListCall = ({data}) =>(
                                 <li
                                     key = {`${index_children}_content_`}
                                 >
-                                    {
-                                        console.log(index_main)
-                                    }
+                                
                                     {   
                                         (index_main === 0)
                                         ? `${(String(values) !== 'nome')? `${String(values).toLocaleUpperCase()} :` : '' } ${content[String(values)]}`
@@ -44,7 +42,7 @@ export default function SectionTertiary(){
     return(
         <section id = "section-tertiary">
             <header>
-                    <span>CHAMADAS</span>
+                <span>CHAMADAS</span>
             </header> 
             <section className="list-section-tertiary">
                     
