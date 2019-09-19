@@ -1,10 +1,22 @@
 *{
   outline: none;
+  font-family: sans-serif;
+  /*COLOR*/
+  
   --primary-color : #366fbc;
   --secundary-color: #ffffff;
   --tertiary-color: #cccccc;
   --fifth-color: #99d9ea;
+  --fourth-color: #008fdb;
+  --sixth-color: #3297ce;
   --transparent: rgba(0,0,0,0);
+  /*COLOR*/
+
+  /*FONT*/
+  --font-size-one: 18pt;
+  --font-size-two: 16pt;
+  --font-size-three: 12pt;
+  /*FONT*/
 }
 body, html {
   margin: 0;
