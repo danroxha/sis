@@ -9,15 +9,19 @@ export default function SectionPrimary(){
             className = {'section-primary-tools'}
         >
                 <Button>
-                    <span>Cadastrar Paciente</span>
+                    <i class="large material-icons">group_add</i>
+                    <p>Cadastrar</p>
                 </Button>
                 
                 <Button>
-                    <span>Calendario Profissional</span>
+                    <i class="material-icons tiny">perm_contact_calendar</i>
+                    <p>Calendario Profissional</p>
                 </Button>
 
                 <Button>
-                    <span>Campanhas</span>
+                   
+                    <i class="large  material-icons">local_activity</i>
+                    <p>Calendario Profissional</p>
                 </Button>
             </section>
     );

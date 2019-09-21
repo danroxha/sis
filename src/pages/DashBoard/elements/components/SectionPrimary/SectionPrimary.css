@@ -1,16 +1,32 @@
-.section-primary-tools button{
+
+.section-primary-tools{
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    align-content: center;
-    text-align: center;
-    line-height: 100px;
-    background-color: var(--secundary-color);
-    color: var(--primary-color);
-    min-height: 127px;
-    margin-bottom: 10px;
+    grid-gap: 10px;
+
 }
 
-.section-primary-tools span{
+.section-primary-tools button{
+    position: relative;
+    width: 230px;
+    display: grid;
+    background: var(--primary-color);
+    display: grid;
+    grid-template-columns: 100px auto;
+    box-sizing: content-box;
+    min-height: 127px;
+    align-items: center;
+    transition: .3s;
+}
+.section-primary-tools button:hover{
+    background: var(--seventh-color);
+}
+.section-primary-tools p{
     text-align: center;
-    line-height: 100px;
+    margin-right: 10px;
+    font-size: var(--font-size-three);
+}
+.section-primary-tools i {
+    font-size: 80px;
+    border-radius: 100%;
+    padding: 10px;
 }

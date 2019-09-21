@@ -1,5 +1,5 @@
 #page-dashboard-index{
-    background-color: #e5e5e5;
+    background-color: var(--eighth-color);
     height: 100vh;  
     display: grid;
     grid-template-columns: 50px auto;
