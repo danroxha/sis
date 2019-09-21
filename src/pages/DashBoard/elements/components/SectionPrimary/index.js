@@ -10,7 +10,7 @@ export default function SectionPrimary(){
         >
                 <Button>
                     <i class="large material-icons">group_add</i>
-                    <p>Cadastrar</p>
+                    <p>Cadastrar Paciente</p>
                 </Button>
                 
                 <Button>
