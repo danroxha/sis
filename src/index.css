@@ -13,6 +13,7 @@
   --eighth-color: #e5e5e5;
   --transparent: rgba(0,0,0,0);
   /*COLOR*/
+  scrollbar-width: thin;
 
   /*FONT*/
   --font-size-one: 18pt;

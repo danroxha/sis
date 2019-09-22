@@ -19,10 +19,9 @@ export default function SectionPrimary(){
                 </Button>
 
                 <Button>
-                   
                     <i class="large  material-icons">local_activity</i>
                     <p>Calendario Profissional</p>
-                </Button>
+                </Button>    
             </section>
     );
 }

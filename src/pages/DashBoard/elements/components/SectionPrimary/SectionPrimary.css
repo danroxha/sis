@@ -1,19 +1,20 @@
 
 .section-primary-tools{
     display: grid;
+    grid-template-columns: repeat(auto);
+    grid-template-rows: repeat(3, auto);
     grid-gap: 10px;
-
+    width: 100%;
 }
 
 .section-primary-tools button{
-    position: relative;
-    width: 230px;
-    display: grid;
+    width: 100%;
+    max-width: 230px;
     background: var(--primary-color);
     display: grid;
     grid-template-columns: 100px auto;
     box-sizing: content-box;
-    min-height: 127px;
+    height: auto;
     align-items: center;
     transition: .3s;
 }
@@ -29,4 +30,29 @@
     font-size: 80px;
     border-radius: 100%;
     padding: 10px;
+}
+@media only screen and (max-width: 700px){
+    
+    .section-primary-tools{
+        grid-template-columns: repeat(3, auto);
+        grid-gap: auto;
+        overflow-x: auto;
+    }
+
+    .section-primary-tools button{
+        display: block;
+        transition: .3s;
+        max-width: none;
+        width: 47vw;
+        scroll-behavior: smooth;
+    }
+    .section-primary-tools i {
+        font-size: 80px;
+        padding: 0px;
+    }
+}
+@media only screen and (max-width: 550px){
+    .section-primary-tools button{
+        width: 44vw;
+    }
 }

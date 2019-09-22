@@ -5,4 +5,12 @@
     grid-template-columns: 50px auto;
     grid-template-rows: 50px auto;
 }
+@media only screen and (max-width: 700px){
+    #page-dashboard-index{
+        display: grid;
+        height: 100%; 
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
 
