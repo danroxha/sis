@@ -51,6 +51,15 @@
         padding: 0px;
     }
 }
+
+.-color{
+    color: green;
+}
+@media only screen and (max-width: 550px){
+    .section-primary-tools button{
+        width: 44vw;
+    }
+}
 @media only screen and (max-width: 550px){
     .section-primary-tools button{
         width: 44vw;

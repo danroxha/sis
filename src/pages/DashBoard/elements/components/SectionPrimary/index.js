@@ -9,18 +9,18 @@ export default function SectionPrimary(){
             className = {'section-primary-tools'}
         >
                 <Button>
-                    <i class="large material-icons">group_add</i>
+                    <i className="large material-icons">group_add</i>
                     <p>Cadastrar Paciente</p>
                 </Button>
                 
                 <Button>
-                    <i class="material-icons tiny">perm_contact_calendar</i>
+                    <i className="material-icons tiny">perm_contact_calendar</i>
                     <p>Calendario Profissional</p>
                 </Button>
 
                 <Button>
-                    <i class="large  material-icons">local_activity</i>
-                    <p>Calendario Profissional</p>
+                    <i className="large  material-icons">local_activity</i>
+                    <p>Campanha</p>
                 </Button>    
             </section>
     );

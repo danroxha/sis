@@ -3,7 +3,7 @@
     text-align: center;
     position: relative;
     padding: 0 10px;
-    margin-top: 150px;
+    
     
 }
 .section-secondary-tools form{
@@ -29,6 +29,7 @@
 
 @media only screen and (max-width: 700px){
     .section-secondary-tools{
-        margin-bottom: 150px;
+        margin: 150px 0;
+
     }
 }   

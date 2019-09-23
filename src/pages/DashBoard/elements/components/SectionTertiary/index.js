@@ -1,55 +1,68 @@
 import React, {useState} from 'react';
-
-//import {List} from '../../../../../components/List';
-
+import ListCall from './elements/CallList';
+import PatientList from './elements/PatientList';
 import data_fa from './data_fa';
-
 import './SectionTertiary.css';
 
-const ListCall = ({data}) =>(
-    <ul>
-        {
-            data.map((content, index_main) => 
-                <li
-                    key = {`${index_main}_lists_`}
-                >
-                    <ul
-                       className = {`list-content ${(index_main === 0) ? '_first-children' : '_next-children'}`}
-                    >
-                        {Object.keys(content).map(
-                            (values,index_children) => 
-                                <li
-                                    key = {`${index_children}_content_`}
-                                >
-                                
-                                    {   
-                                        (index_main === 0)
-                                        ? `${(String(values) !== 'nome')? `${String(values).toLocaleUpperCase()} :` : '' } ${content[String(values)]}`
-                                        : (String(values) === 'nome')? `${content[String(values)]} | ${content['especializacao']}`: ''
-                                    }
-                                </li>
-                            
-                        )}
-                    </ul>
-                </li>
-            )
-        }
-    </ul>
-);
 
+const ToggleIcon = ({state, fn}) => {
+
+    return (
+        <i 
+            onClick = {fn || (()=>'')}
+            className="material-icons tiny _style-font-icon-toggle"
+        >
+            {(state) ? 'toggle_off' : 'toggle_on'}
+        </i>
+    );
+    
+}
+
+const ToggleList = ({state, children, className}) => {
+    return (
+        <section className={className || ''}>
+            {(state) ? children[0] : children[1]}
+        </section>
+    );
+}
 
 export default function SectionTertiary(){
+    
+    const titles = ["CHAMADA", "LISTA DE PACIENTES"];
+
+    const [stateToggle, setStateToggle] = useState(true);
+    const [titleContent, setTitleContent] = useState(titles[Number(!stateToggle)]);
+    
+    const stateChange = () => {
+        if(stateToggle){
+            setStateToggle(false);
+            setTitleContent(titles[Number(stateToggle)]);
+        
+        }else{
+            setStateToggle(true);
+            setTitleContent(titles[Number(stateToggle)]);
+        }
+    }
+    
     return(
         <section id = "section-tertiary">
             <header>
-                <span>CHAMADAS</span>
-            </header> 
-            <section className="list-section-tertiary">
-                    
-                <ListCall
-                    data = {data_fa}
+                <span>{titleContent}</span>
+                <ToggleIcon 
+                    state = {stateToggle}
+                    fn = {stateChange}
                 />
-            </section>
+            </header> 
+            
+            <ToggleList 
+                state = {stateToggle}
+                className = {"list-section-tertiary"}
+            >    
+                <ListCall data = {data_fa} />
+                <PatientList data = {data_fa} />
+            
+            </ToggleList>
+           
         </section>
     );
 }
