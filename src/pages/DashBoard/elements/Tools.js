@@ -9,8 +9,10 @@ import './style/Tools.css';
 export default function Tools(){
     return(
         <main id={'tools-section'}>
-            <SectionPrimary />
-            <SectionSecondary />
+            <div id="tools-section-limit">
+                <SectionPrimary />
+                <SectionSecondary />
+            </div>
             <SectionTertiary />
         </main>
     );

@@ -1,0 +1,12 @@
+#register-patient{
+    background-color:greenyellow;
+}
+#register-patient header{
+    background-color: red;
+    width: 100%;
+    min-height: 20px;
+}
+.button-close{
+    font-size: 1px;
+    text-align: right;
+}

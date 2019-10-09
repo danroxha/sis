@@ -1,15 +1,19 @@
 import React from 'react';
 import './Button.css';
 
-const Button = ({children, type, classNames}) =>(
+const Button = ({children, type, classNames,onClick}) =>(
     <button 
-        className={`buttons ${classNames}`}
+        className={`buttons ${classNames || ''}`}
         type={type || ''}
+        onClick = {onClick}
     >
         {children || 'butão'}
     </button>   
 );
 
+const ButtonClose = ({className}) => (
+   <i className = {`${className} tiny material-icons`}>close</i> 
+);
 
 const ButtonLink = ({children, type, classNames, href}) => (
     <a 
@@ -26,4 +30,4 @@ const ButtonLink = ({children, type, classNames, href}) => (
 );
 
 export default Button;
-export {Button, ButtonLink};
+export {Button, ButtonLink, ButtonClose};
