@@ -15,9 +15,9 @@
     justify-content: space-between;
     border-bottom: 1px solid var(--secundary-color);
 }
+
 #section-tertiary header span{
     color: var(--secundary-color);
-    text-align: left;
     font-size: var(--font-size-one);
     font-weight: bold;
 }

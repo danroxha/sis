@@ -16,6 +16,7 @@
   scrollbar-width: thin;
 
   /*FONT*/
+  --font-size-title: 20pt;
   --font-size-one: 18pt;
   --font-size-two: 16pt;
   --font-size-three: 12pt;

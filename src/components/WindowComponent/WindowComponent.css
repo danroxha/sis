@@ -1,0 +1,27 @@
+#window-component{
+    background-color: var(--secundary-color);
+}   
+#window-component header{
+    background-color: var(--primary-color);
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    border-bottom: 2px solid #000;
+}
+
+#window-component header span{
+    font-size: var(--font-size-one);
+    color: var(--secundary-color)
+}
+#window-component header i{
+    color: bisque;
+    font-size: var(--font-size-one);
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    transition: .2s;
+}
+#window-component header i:hover{
+    color: red;
+}
