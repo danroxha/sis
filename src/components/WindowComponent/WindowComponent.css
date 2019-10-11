@@ -1,5 +1,7 @@
 #window-component{
     background-color: var(--secundary-color);
+    background-color: red;
+    min-height: 100%;
 }   
 #window-component header{
     background-color: var(--primary-color);
@@ -8,6 +10,7 @@
     grid-template-columns: auto auto;
     justify-content: space-between;
     border-bottom: 2px solid #000;
+    font-weight: bolder;
 }
 
 #window-component header span{
@@ -15,13 +18,22 @@
     color: var(--secundary-color)
 }
 #window-component header i{
-    color: bisque;
+    color: var(--secundary-color);
     font-size: var(--font-size-one);
     font-weight: bold;
     padding: 0;
     margin: 0;
     transition: .2s;
+    border-radius: 0;
+
 }
 #window-component header i:hover{
-    color: red;
+    background-color: var(--seventh-color);
+}
+
+@media only screen and (max-width: 550px){
+    #window-component header span{
+        margin-top: 3px;;
+        font-size: 15pt;
+    }
 }

@@ -42,7 +42,7 @@
     
     .section-primary-tools{
         grid-template-columns: repeat(3, auto);
-        grid-gap: auto;
+        grid-template-rows:auto;
         overflow-x: auto;
     }
 
@@ -62,11 +62,7 @@
 .-color{
     color: green;
 }
-@media only screen and (max-width: 550px){
-    .section-primary-tools button{
-        width: 44vw;
-    }
-}
+
 @media only screen and (max-width: 550px){
     .section-primary-tools button{
         width: 44vw;

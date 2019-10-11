@@ -14,7 +14,7 @@ export default function SectionPrimary(){
     const closedWindow = useSelector(state => state.data);
     const dispatch = useDispatch();
 
-    const show = (open) => open ? showComponentOpen: '';
+    const showTool = (open) => open ? showComponentOpen: '';
     
     const openOrCloseTool = (component = "") => () => {
         
@@ -39,7 +39,7 @@ export default function SectionPrimary(){
                     
                 <Button onClick = {openOrCloseTool(< ProfissionalCalendar />)}>
                     <i className="material-icons tiny">perm_contact_calendar</i>
-                    <p>Calendario Profissional</p>
+                    <p>Calendário Profissional</p>
                 </Button>
 
                 <Button onClick = {openOrCloseTool(< Campaigns />)}>
@@ -47,7 +47,7 @@ export default function SectionPrimary(){
                     <p>Campanha</p>
                 </Button>
             
-                {show(closedWindow)}
+                {showTool(closedWindow)}
         </section>
     );
 }

@@ -29,7 +29,8 @@
 
 @media only screen and (max-width: 700px){
     .section-secondary-tools{
-        margin: 150px 0;
+        margin-top: 15px;
+        margin-bottom: 220px;
 
     }
 }   

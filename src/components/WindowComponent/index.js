@@ -11,7 +11,7 @@ function WindowComponent({children, title}){
     return(
         <section id="window-component">
             <header>
-                <span>{title || "Window Title"}</span>
+                <span>{title.toUpperCase() || "Window Title"}</span>
                 <i onClick={closeWindow}className="material-icons button-close">close</i>
             </header>
             <main>
