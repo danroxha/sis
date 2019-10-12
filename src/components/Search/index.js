@@ -1,6 +1,6 @@
 import React from 'react';
 import {Form, Input, Select} from '../Form/';
-import './Search.css';
+import './style.css';
 
 const Search = ({placeholder, data}) => 
 (

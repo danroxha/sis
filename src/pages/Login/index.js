@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './elements/Header';
-import FormLogin from './elements/FormLogin'
-import Help from './elements/Help'
+import Header from './components/Header/';
+import FormLogin from './components/FormLogin/'
+import Help from './components/Help/'
 import {ViewTabs} from '../../components/Tab';
 
-import './index.css';
+import './style.css';
 
 export default function Login(){
     return(

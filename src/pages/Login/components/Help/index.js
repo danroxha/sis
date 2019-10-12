@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {ButtonLink} from '../../../components/Button';
+import {ButtonLink} from '../../../../components/Button';
 
-import './style/Help.css';
+import './style.css';
 
 export default function Help(){
     

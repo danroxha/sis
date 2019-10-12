@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Tab.css';
+import './style.css';
 
 const redirectTabsEnable = children => {
 

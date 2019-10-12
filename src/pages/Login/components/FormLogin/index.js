@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {Button} from '../../../components/Button/';
-import {Form, Input} from '../../../components/Form';
+import {Button} from '../../../../components/Button/';
+import {Form, Input} from '../../../../components/Form';
 
-import './style/FormLogin.css';
+import './style.css';
 
 export default function FormLogin(){
     

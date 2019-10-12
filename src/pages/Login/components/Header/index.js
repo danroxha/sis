@@ -1,7 +1,7 @@
 import React from 'react';
-import {Tabs} from '../../../components/Tab';
+import {Tabs} from '../../../../components/Tab';
 
-import './style/Header.css'
+import './style.css'
 
 export default function Header(){
     return (
