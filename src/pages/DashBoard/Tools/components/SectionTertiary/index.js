@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
+import Container from '../../../../../components/Container';
 import ListCall from './elements/CallList';
 import PatientList from './elements/PatientList';
+import './style.css';
+
+
 import data_fa from './data_fa';
-import './SectionTertiary.css';
 
 
 const ToggleIcon = ({state, fn}) => {
@@ -20,9 +23,9 @@ const ToggleIcon = ({state, fn}) => {
 
 const ToggleList = ({state, children, className}) => {
     return (
-        <section className={className || ''}>
+        <Container className={className || ''}>
             {(state) ? children[0] : children[1]}
-        </section>
+        </Container>
     );
 }
 
@@ -45,7 +48,7 @@ export default function SectionTertiary(){
     }
     
     return(
-        <section id = "section-tertiary">
+        <Container id = "section-tertiary">
             <header>
                 <span>{titleContent}</span>
                 <ToggleIcon 
@@ -63,6 +66,6 @@ export default function SectionTertiary(){
             
             </ToggleList>
            
-        </section>
+        </Container>
     );
 }

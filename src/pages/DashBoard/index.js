@@ -1,16 +1,16 @@
 import React from 'react';
-import HeaderDash from './elements/HeaderDash';
-import MenuBar from './elements/MenuBar';
-import Tools from './elements/Tools';
-
+import Container from '../../components/Container';
+import HeaderDash from './HeaderDash';
+import MenuBar from './MenuBar';
+import Tools from './Tools';
 import './index.css';
 
 export default function DashBoard(){
     return (
-        <section id='page-dashboard-index'>
+        <Container id='page-dashboard-index'>  
             <HeaderDash />
             <MenuBar />
-            <Tools /> 
-        </section>
+            <Tools />
+        </Container> 
     );
 }

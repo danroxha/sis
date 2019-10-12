@@ -1,7 +1,7 @@
 import React from 'react';
 import WindowComponent from '../../../../../../components/WindowComponent';
 
-import './ProfessionalCalendar.css';
+import './style.css';
 
 
 export default function ProfessionalCalendar(){

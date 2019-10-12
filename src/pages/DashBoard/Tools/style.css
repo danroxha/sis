@@ -3,8 +3,10 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-gap: 1em;
-    height: 100%;
-
+    max-height: 100vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 #tools-section{
     margin: 0 10px;
@@ -18,22 +20,25 @@
 
 #tools-section section{
     height: 100%;
-    max-height: 400px;
+    max-height: 600px;
+}
+@media only screen and (max-width: 1024px){
+    #tools-section{
+        margin: 0 10px;
+    }
 }
 @media only screen and (max-width: 700px){
-    
     
     #tools-section-limit{
         grid-gap: 0;
         grid-template-columns: auto;
-        
+        margin-bottom: 15px;        
     }
 
     #tools-section{
         margin: 0 10px;
         display: grid;
         grid-template-columns: auto;
-
     }
 
 }

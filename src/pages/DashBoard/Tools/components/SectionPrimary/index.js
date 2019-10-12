@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 import Button from '../../../../../components/Button';
-import store from '../../../../../store';
+import Container from '../../../../../components/Container';
 import RegisterPacient from './RegisterPatient';
 import ProfissionalCalendar from './ProfessionalCalendar';
 import Campaigns from './Campaigns';
-import './SectionPrimary.css';
+import './style.css';
 
 
 export default function SectionPrimary(){
@@ -15,21 +15,20 @@ export default function SectionPrimary(){
     const dispatch = useDispatch();
 
     const showTool = (open) => open ? showComponentOpen: '';
-    
     const openOrCloseTool = (component = "") => () => {
         
         dispatch({type : 'CHANGE_STATE_WINDOW'});
         
         setShowComponentOpen(
-            <div id="showTool">
+            <Container id="showTool">
                 {component}
-            </div>
+            </Container>
         );
 
     };
    
     return(
-        <section
+        <Container
             className = {'section-primary-tools'}
         >
                 <Button onClick = {openOrCloseTool(< RegisterPacient />)} >
@@ -46,8 +45,8 @@ export default function SectionPrimary(){
                     <i className="large  material-icons">local_activity</i>
                     <p>Campanha</p>
                 </Button>
-            
+    
                 {showTool(closedWindow)}
-        </section>
+        </Container>
     );
 }

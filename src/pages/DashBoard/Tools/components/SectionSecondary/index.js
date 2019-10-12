@@ -1,8 +1,10 @@
 import React from 'react';
+
 import {Button} from '../../../../../components/Button';
+import Container from '../../../../../components/Container';
 import {Form, Input, Select} from '../../../../../components/Form';
 
-import './SectionSecondary.css';
+import './style.css';
 
 export default function SectionSecondary(){
     const list = [
@@ -12,7 +14,7 @@ export default function SectionSecondary(){
     ]
    
     return(
-        <section 
+        <Container 
             className = {'section-secondary-tools'}
         >
             <Form
@@ -41,6 +43,6 @@ export default function SectionSecondary(){
                 </Button>
                 
             </Form>
-        </section>
+        </Container>
     );
 }
