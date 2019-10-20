@@ -3,7 +3,7 @@
 ### Descrição
 Projeto sendo desenvolvido para gerenciamento de Posto de Saúde
 
-![](src/assets/img/prototype3.png?raw=true)
+![](src/assets/img/prototype3.png?raw=true=150x100)
 ![](src/assets/img/prototype5.png?raw=true)
 ![](src/assets/img/prototype4.png?raw=true)
 ![](src/assets/img/prototype.png?raw=true)
