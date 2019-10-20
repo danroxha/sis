@@ -4,7 +4,7 @@
     display: grid;
     align-content: center;
     justify-content: center;
-    background-color: var(--fifth-color);
+    background-color: var(--eighth-color);
 }
 .container-box{
     display: grid;
