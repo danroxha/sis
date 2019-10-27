@@ -8,9 +8,9 @@ import './style.css';
 
 export default function SectionSecondary(){
     const list = [
-        {name: 'PACIENTE'},
-        {name: 'MEDICO'},
-        {name: 'CAMPANHA'},
+        {name: 'Paciente'},
+        {name: 'Medico'},
+        {name: 'Campanha'},
     ]
    
     return(
@@ -22,13 +22,13 @@ export default function SectionSecondary(){
             >
                 <span className = {'title-section-secondary'}>Agendar consulta</span>
                 <Input
-                    label='CPF' 
+                    label='cpf' 
                     name='cpf' 
                     type='text' 
                 />
                 
                 <Input 
-                    label='name' 
+                    label='Nome' 
                     name='name' 
                     type='text' 
                 />

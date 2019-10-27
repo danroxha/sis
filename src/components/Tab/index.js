@@ -23,7 +23,7 @@ const Tabs = ({children : name, className: _className}) =>
 					href={`#${value.name}`} 
 					className={`tabs ${_className || ''}`} 
 				> 
-					{value.name}
+					{value.text}
 				</a>
                 )
             )

@@ -1,13 +1,15 @@
 import React from 'react';
 
 
-export default function LabelIcon({children, icon, className, props}){
-  
-  console.log(props);
+export default function LabelIcon({children, icon, className, onClick}){
 
   return(
-    <div className = {className || ''}>
-      <i className='material-icons'>{icon}</i>     
+    <div 
+      onClick = {onClick}
+      className = {className || ''}
+    >
+      <i className='material-icons'>{icon}</i>
+      {children || ''}
     </div>
   );
 }
