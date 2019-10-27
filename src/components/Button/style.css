@@ -7,9 +7,7 @@
     font-weight: bold;
     background-color: var(--primary-color);
     border-bottom: none;
-    height: 50px;
-    text-transform: uppercase;
-    
+    height: 50px;  
 }
 .link-button{
     width: 100%;

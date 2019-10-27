@@ -1,8 +1,6 @@
 import React from 'react';
 import WindowComponent from '../../../../../../components/WindowComponent';
 
-import './style.css';
-
 export default function Campaigns(){
     
     return(

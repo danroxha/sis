@@ -1,5 +1,8 @@
 import React from 'react';
 
+String.prototype.capitalize = function() {
+    return this.replace(/(?:^|\s)\S/g, function(a) { return a.toUpperCase(); });
+};
 
 const ListCall = ({data}) =>(
     <ul>
@@ -37,8 +40,8 @@ const ListCall = ({data}) =>(
                                 
                                     {   
                                         (index_main === 0)
-                                        ? `${(String(values) !== 'nome')? `${String(values).toLocaleUpperCase()} :` : '' } ${content[String(values)]}`
-                                        : (String(values) === 'nome')? `${content[String(values)]} | ${content['especializacao']}`: ''
+                                        ? `${(String(values) !== 'nome')? `${String(values).capitalize()} :` : '' } ${content[String(values)]}`
+                                        : (String(values) === 'nome')? `${content[String(values)]}`: ''
                                     }
                                 </li>
                             

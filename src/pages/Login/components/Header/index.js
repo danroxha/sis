@@ -10,8 +10,8 @@ export default function Header(){
             <h1>Sistema Informatizado de Saúde</h1>    
             <Tabs className = 'nav-tabs-login'>
                 {[
-                    {name : 'login'},
-                    {name : 'help'},
+                    {name : 'login', text: 'entrar'},
+                    {name : 'help', text: 'ajuda'},
                 ]}
             </Tabs>                
         </header>
